@@ -38,6 +38,28 @@ To copy the value of our public key I have to open the file by using `cat` comma
 
 Now, let's go to our GitHub account and add a key:
 
-* First, let's open our account `Settings`
+* First, let's open our account `Settings`:
 
   ![GitHub account setting](/resources/github_menu.JPG)
+
+
+* There, you need to select `SSH and GPG keys`:
+
+    ![GitHub ssh setting](/resources/gihub_ssh_settings.JPG)
+
+
+* In the new window select `New SSH key`:
+
+    ![Create new SSH key](/resources/new_ssh_key.JPG)
+
+
+* There, you have to give a name to your key (you can use the same name as you gave when generating the keys), 
+  and then paste the value from your public key. Once it's done, click on `Add SSH key`:
+
+    ![Paste key value](/resources/add_ssh_key.JPG)
+
+
+* Once key is added, you will see it in your GitHub Settings:
+
+    ![Key added](/resources/github_key_added.JPG)
+
