@@ -104,6 +104,26 @@ Now, it's time to create a new repository so we can push our code there:
 6. Finally, refresh your browser and see the changes on your GitHub repository:
 
     ![Repository updated](/resources/connection_established.JPG)
+
+
+## Switch from SSH to HTTPS
+
+
+To switch from SSH connection to HTTPS connections is very easy:
+
+1. Check the version of your remote connection in gitBash by using `git remote -v`:
+
+    ![SSH remote version](/resources/remote_version.JPG)
+
+2. Change remote connection to `https` by adding the following command:
+
+    ![Establish new HTTPS connection](/resources/set_new_https_connection.JPG)
+3.  Verify that new HTTPS connection is established by using `git temote -v`:
+
+    ![Verify HTTPS connection](/resources/new_https_connection.JPG)
+4. Push your repository to GitHub using HTTPS:
+
+    ![Push by using HTTPS](/resources/push_with_https.JPG)
     
 
 
