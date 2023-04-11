@@ -63,3 +63,47 @@ Now, let's go to our GitHub account and add a key:
 
     ![Key added](/resources/github_key_added.JPG)
 
+
+### Step 4. Register your key
+
+Before you establish connection with GitHub and can push your code you have to register your key and authenticate your connection using following lines of command:
+
+![Authenticate connection](/resources/add_key_to_register.JPG)
+
+* ``eval `ssh-agent -s` ``  - to activate ssh-agent
+* `ssh-add oleg_github_key` - add private key to register
+* `ssh -T git@github.com` - authenticate your connection to GitHub
+
+
+### Step 5. Create new repository on GitHub and push your commits
+
+Now, it's time to create a new repository so we can push our code there:
+
+1. Go to your GitHub and use `+` button to open the menu and select `New Repository`:
+    
+    ![Create repository](/resources/new_repository.JPG)
+
+2.  Give a name to your repository, rest of the settings you can leave by default, and then click on `Create repository`:
+
+    ![Create_new repository](/resources/create_new_repository.JPG)
+
+3. Once repository is created you need to ensure you have `SSH` enabled in order to connect using SSH. You can use the instructions on your newly created repository to establish connection with your local repository and push any commits to your GitHub:
+
+    ![Repository created and SSH connection selected](/resources/repository_ssh_connection.JPG)
+
+4. Make your first commit (I used PyCharm):
+
+
+   ![First Commit](/resources/first_commit.JPG)
+
+
+5. Now `push` your commit to your GitHub (push was done in gitBash due to technical problems with PyCharm connection):
+
+    ![Push to GitHub](/resources/push_changes_to_git.JPG)
+
+6. Finally, refresh your browser and see the changes on your GitHub repository:
+
+    ![Repository updated](/resources/connection_established.JPG)
+    
+
+
